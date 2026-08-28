@@ -137,6 +137,14 @@
 .features_section .feature_image { opacity: 1 !important; transform: none !important;
   will-change: auto !important; }
 
+/* footer wordmark: smaller, logo alongside */
+.aegis_footer_mark { display: flex !important; align-items: center; gap: 20px;
+  margin-left: 0 !important; font-size: 7.5vw !important; line-height: 1 !important; }
+.aegis_footer_logo { height: 1.15em; width: auto; flex-shrink: 0; }
+.aegis_footer_word { font-size: inherit; line-height: 1; }
+@media (min-width: 1440px) { .aegis_footer_mark { font-size: 108px !important; } }
+@media (max-width: 767px) { .aegis_footer_mark { gap: 12px; font-size: 12vw !important; } }
+
 /* brand accents: section labels, ticks, dividers */
 .features_section .features_svg { color: var(--aegis-green); }
 .aegis_glance_label { color: var(--aegis-green) !important; }
@@ -1249,7 +1257,7 @@
 </div>
 </div>
 </div>
-<div class="footer_text_wrapper"><div class="footer_big_text">Aegis</div></div>
+<div class="footer_text_wrapper"><div class="footer_big_text aegis_footer_mark"><img alt="Aegis Marketing" class="aegis_footer_logo" loading="lazy" src="https://aegismarketing.com.my/wp-content/uploads/2020/12/logo.png"/><span class="aegis_footer_word">Aegis</span></div></div>
 <div class="footer_copyright_text_wrapper">
 <div class="footer_copyright_text">Copyright © 2026 Aegis Marketing Sdn Bhd. All rights reserved.</div>
 <div class="footer_utility_wrapper">
